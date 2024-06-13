@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RVRJC-CGPA-CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+            RVRJC-CSE-CGPA-CALCULATOR
+        </div>
+        <div class="sub1">
+            
+            <form>
+                <p><label for="year">YEAR</label>
+                <select class="year" id="year">
+                    <option value="1st">1st year</option>
+                    <option value="2nd">2nd year</option>
+                    <option value="3rd">3rd year</option>
+                    <option value="4th">4th year</option>
+                </select></p>
+                <label for="semester">SEMESTER</label>
+                <select id="sem">
+                    <option value="1sem">1st sem</option>
+                    <option value="2sem">2nd sem</option>
+            
+                </select><p>
+                <button  type='button' onclick="cal1()">Submit</button>
+                </form>
+        </div>
+        <div id="sub2" class="sub2">
+            <p>
+            <label for="m1">M1</label><select id="m1">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select>
+        </p>
+            <p><label for="phy">PHY</label>
+                <select id="phy">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <p><label for="bee">BEEE</label><select id="beee">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+           <p> <label for="pps">PPS</label><select id="pps">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <p><label for="phylab">PHYLAB</label><select id="phylab">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <p><label for="beeelab">BEEE LAB</label><select id="beeelab">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <p><label for="pps">PPS LAB</label><select id="ppslab">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <p><label for="egd">EGD</label><select id="egd">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <button type="button" onclick="cal2()">Submit</button>
+        </div>
+        <div id="sub3" class="sub3">
+            <p>
+            <label for="m2">M2</label><select id="m2">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select>
+        </p>
+            <p><label for="ec">EC</label>
+                <select id="ec">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <p><label for="de">DE</label><select id="de">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <p><label for="ecs">ECS</label><select id="ecs">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+           <p> <label for="pp">PP</label><select id="pp">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+           
+            <p><label for="eclab">EC LAB</label><select id="eclab">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <p><label for="pplab">PP LAB</label><select id="pplab">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <p><label for="cew">CEW LAB</label><select id="cew">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <p><label for="elcs">ELCS LAB</label><select id="elcs">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <button type="button" onclick="cal3()">Submit</button>
+        </div>
+        <div id="sub4" class="sub4">
+            <p>
+            <label for="p&s">P&S</label><select id="p&s">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select>
+        </p>
+            <p><label for="dms">DMS</label>
+                <select id="dms">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <p><label for="co">CO</label><select id="co">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <p><label for="ds">DS</label><select id="ds">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+           <p> <label for="oop">OOP</label><select id="oop">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+           
+            <p><label for="p&slab">P&S LAB</label><select id="p&slab">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <p><label for="dslab">DS LAB</label><select id="dslab">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <p><label for="ooplab">OOP LAB</label><select id="ooplab">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <p><label for="soc1">SOC-I</label><select id="soc1">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <button type="button" onclick="cal4()">Submit</button>
+        </div>
+        <div id="sub5" class="sub5">
+            <p>
+            <label for="cs">CS</label><select id="cs">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select>
+        </p>
+            <p><label for="dbms">DBMS</label>
+                <select id="dbms">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <p><label for="os">OS</label><select id="os">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+           <p> <label for="se">SE</label><select id="se">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <p><label for="wt">WT</label><select id="wt">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <p><label for="cslab">CS LAB</label><select id="cslab">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <p><label for="dbmslab">DBMS LAB</label><select id="dbmslab">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <p><label for="wtlab">WT LAB</label><select id="wtlab">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <p><label for="soc2">SOC-II</label><select id="soc2">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <button type="button" onclick="cal5()">Submit</button>
+        </div>
+        
+        <div id="sub6" class="sub6">
+            <p>
+            <label for="atfl">ATFL</label><select id="atfl">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select>
+        </p>
+            <p><label for="cn">CN</label>
+                <select id="cn">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <p><label for="daa">DAA</label><select id="daa">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <p><label for="pe1">PE-I</label><select id="pe1">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+           <p> <label for="joe1">JOE-I</label><select id="joe1">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+    
+            <p><label for="daalab">DAA LAB</label><select id="daalab">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <p><label for="dalab">DA LAB</label><select id="dalab">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <p><label for="si">INTERNSHIP</label><select id="si">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <p><label for="soc3">SOC-III</label><select id="soc3">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <button type="button" onclick="cal6()">Submit</button>
+        </div>
+        
+        <div id="sub7" class="sub7">
+            <p>
+            <label for="ai">AI</label><select id="ai">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select>
+        </p>
+            <p><label for="cns">CNS</label>
+                <select id="cns">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <p><label for="ml">ML</label><select id="ml">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <p><label for="pe2">PE-II</label><select id="pe2">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+           <p> <label for="joe2">JOE-II</label><select id="joe2">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+    
+            <p><label for="ailab">AI LAB</label><select id="ailab">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <p><label for="mllab">ML LAB</label><select id="mllab">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <p><label for="tp">TERM PAPER</label><select id="tp">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <p><label for="soc4">SOC-IV</label><select id="soc4">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <button type="button" onclick="cal7()">Submit</button>
+        </div>
+        <div id="sub8" class="sub8">
+            <p>
+            <label for="hss">HSS</label><select id="hss">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select>
+        </p>
+            <p><label for="pe3">PE-III</label>
+                <select id="pe3">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <p><label for="pe4">PE-IV</label><select id="pe4">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <p><label for="pe5">PE-V</label><select id="pe5">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+           <p> <label for="joe3">JOE-III</label><select id="joe3">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+    
+            <p><label for="joe4">JOE-IV</label><select id="joe4">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <p><label for="intern">INTERN</label><select id="intern">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            <p><label for="soc5">SOC-V</label><select id="soc5">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select></p>
+            
+            <button type="button" onclick="cal8()">Submit</button>
+        </div>
+        <div id="sub9" class="sub9">
+            <p>
+            <label for="pw">PROJECT WORK</label><select id="pw">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B</option>
+                <option value="7">C</option>
+                <option value="6">D</option>
+                <option value="5">E</option>
+            </select>
+
+        </p>
+        <button type="button" onclick="cal9()">Submit</button>
+        </div>
+        <div class="output" id="output">
+            <h2>Congratulations!
+            </h2>
+            <h2 id="sgpa"></h2>
+            <h2>Enter Your Previous CGPA<input type="text" id="cgpa1"></h2>
+            <button type="button" onclick="cal10()">Submit</button>
+            
+        </div>
+        <div id="final-output">
+            <h2 id="cgpa" class="cgpa"></h2>
+        </div>
+    </div>
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
